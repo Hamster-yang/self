@@ -23,7 +23,7 @@ var inputReady = true;
             var val = $(this).children($('.404-input')).val().toLowerCase();
             var href;
 
-                if (val === 'kittens'){
+                if (val === '404 not found'){
                 showKittens();
             }else {
                 resetForm();
@@ -49,6 +49,39 @@ var inputReady = true;
             }
 
                 function showKittens(){
+                    $('.terminal').append("<div class='kittens'>"+ //doh
+                        "<p class='prompt'>         ,--,                        ,--,                                                                                                    </p>" +
+                        "<p class='prompt'>       ,--.'|     ,----..          ,--.'|                               ___                                                                  </p>" +
+                        "<p class='prompt'>    ,--,  | :    /   /   \\     ,--,  | :                             ,--.'|_       .--.,                                               ,---,</p>" +
+                        "<p class='prompt'> ,---.'|  : '   /   .     :  ,---.'|  : '         ,---,     ,---.     |  | :,'    ,--.'  \\    ,---.            ,--,        ,---,      ,---.'|</p>" +
+                        "<p class='prompt'> ;   : |  | ;  .   /   ;.  \\ ;   : |  | ;     ,-+-. /  |   '   ,'\\    :  : ' :    |  | /\\/   '   ,'\\         ,'_ /|    ,-+-. /  |     |   | :</p>" +
+                        "<p class='prompt'> |   | : _' | .   ;   /  ` ; |   | : _' |    ,--.'|'   |  /   /   | .;__,'  /     :  : :    /   /   |   .--. |  | :   ,--.'|'   |     |   | |</p>" +
+                        "<p class='prompt'> :   : |.'  | ;   |  ; \\ ; | :   : |.'  |   |   |  ,'' | .   ; ,. : |  |   |      :  | |-, .   ; ,. : ,'_ /| :  . |  |   |  ,'' |   ,--.__| |</p>" +
+                        "<p class='prompt'> |   ' '  ; : |   :  | ; | ' |   ' '  ; :   |   | /  | | '   | |: : :__,'| :      |  : :/| '   | |: : |  ' | |  . .  |   | /  | |  /   ,'   |</p>" +
+                        "<p class='prompt'> \\   \\  .'. | .   |  ' ' ' : \\   \\  .'. |   |   | |  | | '   | .; :   '  : |__    |  |  .' '   | .; : |  | ' |  | |  |   | |  | | .   '  /  |</p>" +
+                        "<p class='prompt'>  `---`:  | ' '   ;  \\; /  |  `---`:  | '   |   | |  |/  |   :    |   |  | '.'|   '  : '   |   :    | :  | : ;  ; |  |   | |  |/  '   ; |:  |</p>" +
+                        "<p class='prompt'>       '  ; |  \\   \\  ',  /        '  ; |   |   | |--'    \\   \\  /    ;  :    ;   |  | |    \\   \\  /  '  :  `--'   \\ |   | |--'   |   | '/  '</p>" +
+                        "<p class='prompt'>       |  : ;   ;   :    /         |  : ;   |   |/         `----'     |  ,   /    |  : \\     `----'   :  ,      .-./ |   |/       |   :    :|</p>" +
+                        "<p class='prompt'>       '  ,/     \\   \\ .'          '  ,/    '---'                      ---`-'     |  |,'               `--`----'     '---'         \\   \\ /  </p>" +
+                        "<p class='prompt'>       '--'       `---`            '--'                                           `--'                                              `----'   </p>" +
+                        "<p class='prompt'> hamsteryang.com                                                             </p></div>");
+                    /*
+                    $('.terminal').append("<div class='kittens'>"+
+                        "<p class='prompt'>        ,--,                        ,--,                                                         </p>" +
+                        "<p class='prompt'>       ,--.                ,/   .`|       ,/   .`|                     ,--.              ,`--.' |</p>" +
+                        "<p class='prompt'>   ,--/  /|    ,---,     ,`   .'  :     ,`   .'  :     ,---,.        ,--.'|   .--.--.    |   :  :</p>" +
+                        "<p class='prompt'>,---,': / ' ,`--.' |   ;    ;     /   ;    ;     /   ,'  .' |    ,--,:  : |  /  /    '.  '   '  ;</p>" +
+                        "<p class='prompt'>:   : '/ /  |   :  : .'___,/    ,'  .'___,/    ,'  ,---.'   | ,`--.'`|  ' : |  :  /`. /  |   |  |</p>" +
+                        "<p class='prompt'>|   '   ,   :   |  ' |    :     |   |    :     |   |   |   .' |   :  :  | | ;  |  |--`   '   :  ;</p>" +
+                        "<p class='prompt'>'   |  /    |   :  | ;    |.';  ;   ;    |.';  ;   :   :  |-, :   |   \\ | : |  :  ;_     |   |  '</p>" +
+                        "<p class='prompt'>|   ;  ;    '   '  ; `----'  |  |   `----'  |  |   :   |  ;/| |   : '  '; |  \\  \\    `.  '   :  |</p>" +
+                        "<p class='prompt'>:   '   \\   |   |  |     '   :  ;       '   :  ;   |   :   .' '   ' ;.    ;   `----.   \\ ;   |  ;</p>" +
+                        "<p class='prompt'>'   : |.  \\ |   |  '     '   :  |       '   :  |   '   :  ;/| '   : |  ; .'  /  /`--'  /  `--..`;  </p>" +
+                        "<p class='prompt'>|   | '_\\.' '   :  |     ;   |.'        ;   |.'    |   |    \\ |   | '`--'   '--'.     /  .--,_   </p>" +
+                        "<p class='prompt'>'   : |     ;   |.'      '---'          '---'      |   :   .' '   : |         `--'---'   |    |`.  </p>" +
+                        "<p class='prompt'>;   |,'     '---'                                  |   | ,'   ;   |.'                    `-- -`, ; </p>" +
+                        "<p class='prompt'>'---'                                              `----'     '---'                        '---`'</p>" +
+                        "<p class='prompt'>                                                              </p></div>");
                     $('.terminal').append("<div class='kittens'>"+
                                             "<p class='prompt'>	                             ,----,         ,----,                                          ,---,</p>" +
                                             "<p class='prompt'>       ,--.                ,/   .`|       ,/   .`|                     ,--.              ,`--.' |</p>" +
@@ -66,7 +99,7 @@ var inputReady = true;
                                             "<p class='prompt'>'---'                                              `----'     '---'                        '---`'</p>" +
                                             "<p class='prompt'>                                                              </p></div>");
 
-                    
+                    */
                     var lines = $('.kittens p');
                     $.each(lines, function(index, line){
                         setTimeout(function(){
