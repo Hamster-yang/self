@@ -22,6 +22,7 @@ var inputReady = true;
             e.preventDefault();
             var val = $(this).children($('.404-input')).val().toLowerCase();
             var href;
+            console.log(val);
 
                 if (val === '404 not found'){
                 showKittens();
